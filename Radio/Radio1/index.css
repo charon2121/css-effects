@@ -1,0 +1,12 @@
+.radio-option {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s;
+}
+
+.radio-option.selected {
+    border-color: blue;
+    background-color: lightblue;
+}
