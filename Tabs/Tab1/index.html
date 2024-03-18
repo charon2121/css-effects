@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab2</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>标签2</title>
+    <link rel="stylesheet" href="./index2.css">
 </head>
+
 <body>
-    <div class="test">
-        <div class="container">
-            <div class="tabs">
-                <input type="radio" id="radio-1" name="tabs" checked="checked">
-                <label for="radio-1" class="tab"><span class="notification">2</span>Item1</label>
-                <input type="radio" id="radio-2" name="tabs">
-                <label for="radio-2" class="tab">Item2</label>
-                <input type="radio" id="radio-3" name="tabs">
-                <label for="radio-3" class="tab">Item3</label> 
-                <span class="glider"></span>
+    <div class="container">
+        <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" checked="checked">
+            <label for="radio-1" class="tab">Item1</label>
+            <input type="radio" id="radio-2" name="tabs">
+            <label for="radio-2" class="tab">Item2</label>
+            <input type="radio" id="radio-3" name="tabs">
+            <label for="radio-3" class="tab">Item3</label>
+            <span class="glider"></span>
+        </div>
+        <div class="panels">
+            <div class="panel" id="panel-1">
+                panel1
+            </div>
+            <div class="panel" id="panel-2">
+                panel2
+            </div>
+            <div class="panel" id="panel-3">
+                panel3
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -21,15 +21,7 @@ label {
 	-ms-user-select: none;     /* IE 10+ and Edge */
 }
 
-
-.test {
-	position: relative;
-	width: 800px;
-	height: 200px;
-}
-
 .container {
-	/* position: absolute; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -37,7 +29,7 @@ label {
 
 .tabs {
 	display: flex;
-	/* position: relative; */
+	position: relative;
 	background-color: #fff;
 	box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
 	padding: 0.75rem;
@@ -100,8 +92,6 @@ input[id="radio-3"]:checked ~ .glider {
 
 .glider {
 	position: absolute;
-	left: 0;
-	top: 2px;
 	display: flex;
 	height: 54px;
 	width: 200px;
@@ -111,3 +101,7 @@ input[id="radio-3"]:checked ~ .glider {
 	transition: 0.25s ease-out;
 }
 
+
+.panel {
+	background-color: red;
+}

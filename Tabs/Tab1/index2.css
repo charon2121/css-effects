@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #185ee0;
+	--secondary-color: #e6eef9;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    flex-direction: column;
+    width: 564px;
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15);
+    padding: 0.75em;
+    border-radius: 0.25em;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.tabs * {
+    z-index: 2;
+}
+
+input[type="radio"] {
+    display: none;
+    opacity: 0;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 180px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+input[type="radio"]:checked + label {
+    color: var(--primary-color);
+}
+
+input[id="radio-1"]:checked ~ .glider {
+    transform: translateX(0);
+}
+
+input[id="radio-2"]:checked ~ .glider {
+    transform: translateX(100%);
+}
+
+input[id="radio-3"]:checked ~ .glider {
+    transform: translateX(200%);
+}
+
+.glider {
+    position: absolute;
+    display: flex;
+    height: 48px;
+    width: 180px;
+    z-index: 1;
+    border-radius: 0.25em;
+    transition: 0.25s ease-out;
+    background: var(--secondary-color);
+}
+
+.panel {
+    width: 564px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 10px;
+}
