@@ -56,6 +56,11 @@ input[type="radio"] {
     font-size: 1em;
     font-weight: 500;
     border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 input[type="radio"]:checked + label {
@@ -76,6 +81,7 @@ input[id="radio-3"]:checked ~ .glider {
 
 .glider {
     position: absolute;
+    bottom: 10px;
     display: flex;
     height: 48px;
     width: 180px;
